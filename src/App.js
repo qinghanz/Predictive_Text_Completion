@@ -47,11 +47,38 @@ function App() {
         rows="5"
         cols="50"
       ></textarea>
-      <br />
       <div className="predicted-text">
         <h2>Predicted Text:</h2>
         <p>{predictedText}</p>
       </div>
+      <style jsx>{`
+        .container {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .title {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        .status {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+
+        .input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+
+        .predicted-text {
+          font-size: 20px;
+        }
+      `}</style>
     </div>
   );
 }

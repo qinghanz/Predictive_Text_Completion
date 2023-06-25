@@ -22,7 +22,7 @@ def predict():
     # Tokenize the input text
     input_ids = tokenizer.encode(text, return_tensors="pt")
 
-    # Generate predicted text using the GPT-3 model
+    # Generate predicted text using the GPT-2 model
     output = model.generate(input_ids, max_length=100, num_return_sequences=1)
     predicted_text = tokenizer.decode(output[0], skip_special_tokens=True)
 
